@@ -1,19 +1,11 @@
-import argparse
 import os
-import shutil
-import time
-import random
 
 import numpy as np
 
 import torch
 import torch.nn as nn
-import torch.backends.cudnn as cudnn
 import torch.optim as optim
-from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
-import torchvision.datasets
-import torchvision.transforms as transforms
-import torch.nn.functional as F
+from torch.utils.data import DataLoader, SequentialSampler
 from tensorboardX import SummaryWriter
 from progress.bar import Bar
 from tqdm import tqdm
